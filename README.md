@@ -1,3 +1,8 @@
+# Reproduction steps
+- `docker-compose up` to start postgres container which will automatically execute the db/db.sql file to create table
+- launch app
+- go to localhost:8080/swagger-ui and execute the call, observing the error
+
 ## Micronaut 3.2.1 Documentation
 
 - [User Guide](https://docs.micronaut.io/3.2.1/guide/index.html)
