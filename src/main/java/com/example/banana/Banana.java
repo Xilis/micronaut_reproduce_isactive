@@ -10,8 +10,12 @@ public class Banana {
     @Id
     private Long bananaId;
 
-    @MappedProperty(value = "is_active")
     private boolean isActive;
+
+    @MappedProperty(value = "is_active")
+    private boolean isVeryInteresting;
+
+    private boolean is_active;
 
     @MappedProperty(value = "is_active")
     private boolean what;
@@ -39,5 +43,21 @@ public class Banana {
 
     public void setBananaId(Long bananaId) {
         this.bananaId = bananaId;
+    }
+
+    public boolean isIs_active() {
+        return is_active;
+    }
+
+    public void setIs_active(boolean is_active) {
+        this.is_active = is_active;
+    }
+
+    public boolean isVeryInteresting() {
+        return isVeryInteresting;
+    }
+
+    public void setVeryInteresting(boolean veryInteresting) {
+        isVeryInteresting = veryInteresting;
     }
 }
