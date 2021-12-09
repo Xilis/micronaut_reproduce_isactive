@@ -8,7 +8,7 @@ import io.micronaut.data.annotation.MappedProperty;
 public class Banana {
 
     @Id
-    private int bananaId;
+    private Long bananaId;
 
     @MappedProperty(value = "is_active")
     private boolean isActive;
@@ -33,11 +33,11 @@ public class Banana {
         this.what = what;
     }
 
-    public int getBananaId() {
+    public Long getBananaId() {
         return bananaId;
     }
 
-    public void setBananaId(int bananaId) {
+    public void setBananaId(Long bananaId) {
         this.bananaId = bananaId;
     }
 }
