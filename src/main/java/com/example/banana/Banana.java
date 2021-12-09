@@ -8,17 +8,17 @@ import io.micronaut.data.annotation.MappedProperty;
 public class Banana {
 
     @Id
-    private Long bananaId;
+    private Long bananaId; // mapped to banana_id correctly
 
-    private boolean isActive;
-
-    @MappedProperty(value = "is_active")
-    private boolean isVeryInteresting;
-
-    private boolean is_active;
+    private boolean isActive; // mapped to active incorrectly
 
     @MappedProperty(value = "is_active")
-    private boolean what;
+    private boolean isVeryInteresting; // mapped to column very_interesting incorrectly
+
+    private boolean is_active; // mapped to column is_active correctly
+
+    @MappedProperty(value = "is_active")
+    private boolean what; // mapped to column is_active correctly
 
 
     public boolean isActive() {

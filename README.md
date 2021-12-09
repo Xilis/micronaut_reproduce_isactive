@@ -4,7 +4,13 @@ The `isActive` property does not get mapped to the `is_active` column correctly.
 does not change anything.
 
 ```
-SELECT banana_."banana_id",banana_."active",banana_."is_active",banana_."is_active",banana_."very_interesting" FROM "bananas" banana_
+SELECT banana_."banana_id",
+       banana_."active",
+       banana_."is_active",
+       banana_."is_active",
+       banana_."very_interesting"
+FROM "bananas" banana_
+
 ```
 ## Description
 
